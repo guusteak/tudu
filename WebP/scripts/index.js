@@ -4,15 +4,15 @@ const {readFile} = require('fs').promises;
 const server = createServer();
 server.on('request', async(req, res)=>{
     const jsf = await readFile('../../frontscript.js', 'utf-8');
-    const js = await readFile('../../app.js', 'utf-8');
+    //const js = await readFile('../../app.js', 'utf-8');
     const css = await readFile('../css/style.css', 'utf-8')
-    if(req.url.indexOf('app.js') != -1){
+    /*if(req.url.indexOf('app.js') != -1){
         console.log(req.url);
         res.writeHead(200, {'Content-Type': 'text/javascript'});
         res.write(js);
         res.end();
         return;
-    }
+    }*/
     if(req.url.indexOf('frontscript.js') != -1){
         console.log(req.url);
         res.writeHead(200, {'Content-Type': 'text/javascript'});
