@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.todo{
+    min-width: 300px;
+    min-height: 300px;
+    width: 30vw;
+    height: 30vw;
+    border: 1px solid black;
+    padding: 10px;
+    overflow: scroll;
+}
+
+.task{
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+}
+.operator-panel{
+    min-width: 300px;
+    margin-top: 20px;
+    height: 40px;
+    align-items: center;
+    border: 1px solid rebeccapurple;
+    display: flex;
+    width: 30vw;
+    justify-content: space-between;
+}
+
+.add{
+    width: 60%;
+    height: 100%;
+}
